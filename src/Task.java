@@ -9,7 +9,6 @@ public class Task implements Callable<Object> {
     }
 
     public Object call() {
-        System.out.println("fff");
         point.move(1, 1);
         return null;
     }

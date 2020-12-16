@@ -3,7 +3,7 @@ public class Point {
     int y;
 
     void move(int dx, int dy){
-        x =+dx;
-        y =+dy;
+        x +=dx;
+        y +=dy;
     }
 }
