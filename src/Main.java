@@ -10,7 +10,7 @@ public class Main {
 
     void run() {
         Point point = new Point();
-        Collection<Task> taskList = new ArrayList<>();
+        //Collection<Task> taskList = new ArrayList<>();
         ExecutorService executor = Executors.newFixedThreadPool(2000);
 
         try {
