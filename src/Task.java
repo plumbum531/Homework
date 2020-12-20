@@ -9,7 +9,8 @@ public class Task implements Runnable {
     }
 
     public void run() {
-        point.move(1, 1);
+        //point.move(1, 1);
+        point.move(point, 1, 1);
     }
 
 }
