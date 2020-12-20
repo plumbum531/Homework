@@ -9,8 +9,9 @@ public class ThreadFibonachi {
         Thread thread = new Thread(countFibonachiNumber);
         thread.start();
         try {
-            thread.join();
-            System.out.println("Result in main thread is " + countFibonachiNumber.result);
+            thread.sleep(3000);
+            thread.interrupt();
+            System.out.println("Thread result in main thread is " + countFibonachiNumber.result);
         } catch (InterruptedException e) {
             System.out.println("Calculatoin is interrupted" + e.getMessage());
         }

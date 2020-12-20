@@ -14,8 +14,8 @@ public class RunnableFibonachi {
         executorService.submit(counter);
 
         try {
-            executorService.awaitTermination(200, TimeUnit.MILLISECONDS);
-            System.out.println("Result is = " + counter.result);
+            executorService.awaitTermination(3, TimeUnit.SECONDS);
+            System.out.println("Runnable result is = " + counter.result);
         } catch (InterruptedException e) {
             System.out.println("Calculation is interrapted" + e.getMessage());
         }finally{
